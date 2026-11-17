@@ -1,50 +1,35 @@
-# 🎈 Streamlit + LLM Examples App
+# PrepAI — Streamlit + LLM experiments
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/streamlit/llm-examples?quickstart=1)
+A repository of experiments with Streamlit, OpenAI APIs, and LangChain. These examples explore building conversational interfaces, file Q&A, search-assisted chat, prompt templates, and feedback flows.
 
-Starter examples for building LLM apps with Streamlit.
+> **Current repository scope:** The checked-in code contains Streamlit LLM examples. It does not currently demonstrate the complete role-specific interview practice, personalized study-plan generation, or progress dashboards described in my broader PrepAI plans.
 
-## Overview of the App
+## Contents
 
-This app showcases a growing collection of LLM minimum working examples.
+- `Chatbot.py` — Streamlit chat interface using the OpenAI API
+- `1_File_Q&A.py` — file question-answering experiment
+- `2_Chat_with_search.py` — chat with search experiment
+- `3_Langchain_Quickstart.py` — LangChain introduction
+- `4_Langchain_PromptTemplate.py` — prompt template experiment
+- `5_Chat_with_user_feedback.py` — user-feedback experiment
+- `app_test.py` — Streamlit app testing experiments
 
-Current examples include:
+## Run locally
 
-- Chatbot
-- File Q&A
-- Chat with Internet search
-- LangChain Quickstart
-- LangChain PromptTemplate
-- Chat with user feedback
-
-## Demo App
-
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://llm-examples.streamlit.app/)
-
-### Get an OpenAI API key
-
-You can get your own OpenAI API key by following the following instructions:
-
-1. Go to https://platform.openai.com/account/api-keys.
-2. Click on the `+ Create new secret key` button.
-3. Next, enter an identifier name (optional) and click on the `Create secret key` button.
-
-### Enter the OpenAI API key in Streamlit Community Cloud
-
-To set the OpenAI API key as an environment variable in Streamlit apps, do the following:
-
-1. At the lower right corner, click on `< Manage app` then click on the vertical "..." followed by clicking on `Settings`.
-2. This brings the **App settings**, next click on the `Secrets` tab and paste the API key into the text box as follows:
-
-```sh
-OPENAI_API_KEY='xxxxxxxxxx'
-```
-
-## Run it locally
-
-```sh
-virtualenv .venv
-source .venv/bin/activate
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 streamlit run Chatbot.py
 ```
+
+Supply your own OpenAI API key in the app sidebar. Never commit credentials. API usage may incur costs.
+
+## Technical focus
+
+Python · Streamlit · OpenAI API · LangChain · UI state · API integration · application testing
+
+## Attribution
+
+The repository includes examples based on the [Streamlit LLM examples](https://github.com/streamlit/llm-examples). Original upstream links remain in some source files. This README describes the checked-in code rather than claiming all example code was authored from scratch.
+
